@@ -1,5 +1,6 @@
 package com.kakao.clone.kakao.dto.responseDto;
 
+import com.kakao.clone.kakao.model.User;
 import lombok.Getter;
 
 @Getter
@@ -16,5 +17,12 @@ public class UserResponseDto {
         this.profileImage = profileImage;
         this.profileBgImage = profileBgImage;
         this.message = message;
+    }
+
+    public UserResponseDto(User user){
+        this.username = user.getUsername();
+        this.nickname = user.getNickname();
+        this.profileImage = user.getProfileImage();
+        this.profileBgImage = user.getProfileBgImage();
     }
 }

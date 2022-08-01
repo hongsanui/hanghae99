@@ -50,6 +50,7 @@ dependencies {
 
 
 	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.5.RELEASE'
+	implementation group: 'ch.simas.qlrm', name: 'qlrm', version: '1.7.1'
 }
 
 tasks.named('test') {

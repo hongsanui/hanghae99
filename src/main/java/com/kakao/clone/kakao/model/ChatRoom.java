@@ -22,7 +22,7 @@ public class ChatRoom extends Timestamped {
     @Column
     private String roomName;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private List<User> userList = new ArrayList<>();
 

@@ -29,6 +29,7 @@ public enum ErrorCode {
     DUPLICATE_NICKNAME(HttpStatus.CONFLICT, "중복된 닉네임이 존재합니다");
 
 
+
     private final HttpStatus httpStatus;
     private final String errorMessage;
 
